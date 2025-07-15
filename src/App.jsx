@@ -6,7 +6,7 @@ import GalleryNss from './components/GalleryNss';
 import Home from './components/Home';
 import HoursNss from './components/HoursNss';
 import Officers from './components/Officers';
-import UpcomingEvents from './components/Upcomingevents';
+import UpcomingEvents from './components/UpcomingEvents';
 
 function App() {
   return (

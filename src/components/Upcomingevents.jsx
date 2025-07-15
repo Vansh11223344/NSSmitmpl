@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import './Upcomingevents.css';
+import './UpcomingEvents.css';
 
 const navLinks = [
   { text: 'Home', href: '/' },
@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
        <title>Upcoming NSS Events</title>
       <header className="upcoming-header">
         <div className="logo-container">
-          <img src="/images/nsslogo.png" alt="NSS Logo" className="logo-img" />
+          <img src="/images/nsslogo.webp" alt="NSS Logo" className="logo-img" />
           <div className="logo-text">
             <h1 className="logo-title">National Service Scheme</h1>
             <p className="logo-subtitle">Empowering Communities, Inspiring Change</p>

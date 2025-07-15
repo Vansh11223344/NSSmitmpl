@@ -23,12 +23,12 @@ const slides = [
     text: 'Join us in making a difference in the community.',
   },
   {
-    image: '/images/DSC_2n3Year.JPG',
+    image: '/images/DSC_2n3Year.webp',
     title: 'Upcoming Events',
     text: 'Check out our latest events and participate.',
   },
   {
-    image: '/images/DSC_3rdYear.JPG',
+    image: '/images/DSC_3rdYear.webp',
     title: 'Volunteer Today',
     text: 'Contribute your time and skills to the community.',
   },
@@ -62,7 +62,7 @@ const Home = () => {
     <div className="home-container">
       <header>
         <div className="logo-container">
-          <img src="/images/nsslogo.png" alt="NSS Logo" className="logo-img" />
+          <img src="/images/nsslogo.webp" alt="NSS Logo" className="logo-img" />
           <div className="logo-text">
             <h1 className="logo-title">National Service Scheme</h1>
             <p className="logo-subtitle">Empowering Communities, Inspiring Change</p>
@@ -153,9 +153,9 @@ const Home = () => {
           </a>
         </p>
         <div className="gallery-container">
-          <img src="/images/DSC_2n3Year.JPG" alt="Event 1" />
-          <img src="/images/frontpost.jpg" alt="Event 2" />
-          <img src="/images/DSC_3rdYear.JPG" alt="Event 3" />
+          <img src="/images/DSC_2n3Year.webp" alt="Event 1" />
+          <img src="/images/DSC_2ndYear.webp" alt="Event 2" />
+          <img src="/images/DSC_3rdYear.webp" alt="Event 3" />
         </div>
       </section>
 

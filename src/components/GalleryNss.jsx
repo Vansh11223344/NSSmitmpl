@@ -62,7 +62,7 @@ const GalleryNss = () => {
        <title>NSS Gallery</title>
       <header className="gallery-nss-header">
         <div className="logo-container">
-          <img src="/images/nsslogo.png" alt="NSS Logo" className="logo-img" />
+          <img src="/images/nsslogo.webp" alt="NSS Logo" className="logo-img" />
           <div className="logo-text">
             <h1 className="logo-title">National Service Scheme</h1>
             <p className="logo-subtitle">Empowering Communities, Inspiring Change</p>
