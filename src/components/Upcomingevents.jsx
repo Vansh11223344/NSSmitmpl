@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import './UpcomingEvents.css';
+import './Upcomingevents.css';
 
 const navLinks = [
   { text: 'Home', href: '/' },
