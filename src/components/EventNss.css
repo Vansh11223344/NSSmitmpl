@@ -1,0 +1,280 @@
+/* Scoped to EventNss component */
+.event-nss-container {
+  width: 100%;
+  max-width: 100vw; /* Prevent overflow */
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #002f40, #0f4c5c, #002f40);
+  color: #ffffff;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+.event-nss-container .event-nss-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px; /* Increased padding for larger header */
+  background-color: #002244;
+  border-bottom: 2px solid #ffffff;
+  z-index: 1000;
+  width: 100%;
+  max-width: 100vw; /* Ensure header fits viewport */
+  box-sizing: border-box;
+  min-height: 100px; /* Increased header height */
+  position: sticky;
+  top: 0;
+}
+
+/* Logo Container */
+.event-nss-container .logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 1;
+}
+
+.event-nss-container .logo-img {
+  height: 70px; /* Increased logo size */
+  width: auto;
+  margin-right: 12px;
+}
+
+.event-nss-container .logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-nss-container .logo-title {
+  font-size: 1.8rem; /* Larger title */
+  font-weight: bold;
+  margin: 0;
+  color: white;
+}
+
+.event-nss-container .logo-subtitle {
+  font-size: 1rem; /* Subtitle size */
+  color: #ddd;
+  margin-top: 4px;
+}
+
+/* Menu Toggle */
+.event-nss-container .menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+.event-nss-container .menu-toggle:hover {
+  transform: scale(1.1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+.event-nss-container nav {
+  display: none;
+  flex-direction: column;
+  width: 40vw; /* Set to 40% of screen width */
+  max-width: 40vw;
+  position: absolute;
+  top: 100px; /* Adjusted to account for larger header */
+  right: 0; /* Align to the right side */
+  background-color: #002244;
+  z-index: 1000;
+  box-sizing: border-box;
+  height: calc(100vh - 100px); /* Full height minus header */
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%); /* Hidden off-screen by default */
+}
+
+.event-nss-container nav.active {
+  display: flex;
+  transform: translateX(0); /* Slide in when active */
+}
+
+.event-nss-container .nav-links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.event-nss-container .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 12px 20px;
+  border-bottom: 1px solid #444;
+  font-size: 16px;
+}
+
+.event-nss-container .nav-links a:hover {
+  background: #00039e;
+  border-radius: 4px;
+}
+
+/* Content Area */
+.event-nss-container .event-nss-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.event-nss-container .event-nss-content h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.event-nss-container .event {
+  background: linear-gradient(to right, #4b0000, #16072b, #4b0000);
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-nss-container .event h2 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.event-nss-container .event p {
+  color: #ffffff;
+  margin: 12px 0;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.event-nss-container .event b {
+  color: #ffeb3b;
+}
+
+/* Prevent background scroll when menu is open */
+body.menu-open {
+  overflow: hidden;
+}
+
+/* Responsive Styles */
+
+/* Phone Screens (≤768px) */
+@media (max-width: 768px) {
+  .event-nss-container .event-nss-header {
+    padding: 15px 10px;
+    min-height: 80px;
+  }
+
+  .event-nss-container .logo-img {
+    height: 50px; /* Slightly smaller for mobile */
+  }
+
+  .event-nss-container .logo-title {
+    font-size: 1.4rem;
+  }
+
+  .event-nss-container .logo-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .event-nss-container .menu-toggle {
+    display: block;
+    margin-left: auto;
+    font-size: 24px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .event-nss-container nav {
+    top: 80px;
+    width: 40vw; /* Keep 40% width on mobile */
+    height: calc(100vh - 80px);
+  }
+
+  .event-nss-container .event-nss-content {
+    padding: 15px;
+  }
+
+  .event-nss-container .event-nss-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .event-nss-container .event h2 {
+    font-size: 20px;
+  }
+
+  .event-nss-container .event p {
+    font-size: 16px;
+  }
+}
+
+/* Tablet Screens (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .event-nss-container .event-nss-header {
+    padding: 15px 15px;
+    min-height: 90px;
+  }
+
+  .event-nss-container .logo-img {
+    height: 60px;
+  }
+
+  .event-nss-container .logo-title {
+    font-size: 1.6rem;
+  }
+
+  .event-nss-container .logo-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .event-nss-container .menu-toggle {
+    display: block;
+    margin-left: auto;
+    font-size: 24px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .event-nss-container nav {
+    top: 90px;
+    width: 40vw; /* Keep 40% width on tablet */
+    height: calc(100vh - 90px);
+  }
+
+  .event-nss-container .event-nss-content {
+    padding: 18px;
+  }
+
+  .event-nss-container .event-nss-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .event-nss-container .event h2 {
+    font-size: 22px;
+  }
+
+  .event-nss-container .event p {
+    font-size: 17px;
+  }
+}
+
+/* Desktop Screens (>1024px) */
+@media (min-width: 1025px) {
+  .event-nss-container .menu-toggle {
+    display: block;
+  }
+
+  .event-nss-container nav {
+    width: 40vw; /* Keep 40% width on desktop */
+  }
+}
