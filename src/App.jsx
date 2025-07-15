@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import AboutNss from './components/AboutNss';
-import Camp from './components/camp';
+import Camp from './components/Camp';
 import EventNss from './components/EventNss';
 import GalleryNss from './components/GalleryNss';
 import Home from './components/Home';
 import HoursNss from './components/HoursNss';
 import Officers from './components/Officers';
-import UpcomingEvents from './components/upcomingevents';
+import UpcomingEvents from './components/Upcomingevents';
 
 function App() {
   return (
