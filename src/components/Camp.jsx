@@ -8,7 +8,7 @@ const navLinks = [
   { text: 'About Us', href: '/AboutNss' },
   { text: 'Events', href: '/EventNss' },
   { text: 'Gallery', href: '/GalleryNss' },
-  { text: 'Volunteer Hours', href: '#volunteerHours' },
+  { text: 'Volunteer Hours', href: '/HoursNss' },
   { text: 'Program Officers', href: '/Officers' },
   { text: 'Upcoming Events', href: '/UpcomingEvents' },
   { text: 'Annual Camps', href: '#camp' },
@@ -85,7 +85,7 @@ const Camp = () => {
         </p>
         <div className="camp-link-wrapper">
           <a
-            href="/images/December2024.docx"
+            href="/reports/December2024.docx"
             target="_blank"
             rel="noopener noreferrer"
             className="camp-link"

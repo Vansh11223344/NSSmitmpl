@@ -13,7 +13,7 @@ const navLinks = [
   { text: 'Volunteer Hours', href: './HoursNss' },
   { text: 'Program Officers', href: './Officers' },
   { text: 'Upcoming Events', href: './UpcomingEvents' },
-  { text: 'Annual Camps', href: './CampNss' },
+  { text: 'Annual Camps', href: './Camp' },
 ];
 
 const slides = [

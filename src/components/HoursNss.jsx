@@ -8,7 +8,7 @@ const navLinks = [
   { text: 'About Us', href: '/AboutNss' },
   { text: 'Events', href: '/EventNss' },
   { text: 'Gallery', href: '/GalleryNss' },
-  { text: 'Volunteer Hours', href: '#hours' },
+  { text: 'Volunteer Hours', href: '/HoursNss' },
   { text: 'Program Officers', href: '/Officers' },
   { text: 'Upcoming Events', href: '/UpcomingEvents' },
   { text: 'Annual Camps', href: '/Camp' },
