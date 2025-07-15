@@ -266,7 +266,7 @@ const Home = () => {
             aria-label="NSS"
             className="footer-social-link"
           >
-            <img src="/images/nsslogo.png" alt="NSS Logo" className="footer-social-img" />
+            <img src="/images/nsslogo.webp" alt="NSS Logo" className="footer-social-img" />
           </a>
         </div>
         <p className="copyright">
